@@ -5,7 +5,7 @@
 
 #+,-,*,/,//,**,%
 
-#common datat types : int, float, complex, str, bool, None,
+#common data types : int, float, complex, str, bool, None,
 
 # 'T'rue, 'F'alse
 
