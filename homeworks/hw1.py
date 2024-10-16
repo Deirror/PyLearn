@@ -13,13 +13,16 @@ def main():
         'чубрица', 'черен пипер', 'врачанска ракия'
     )
 
-    shopping_list = viktors_ingredients
+    shopping_list = []
+    shopping_list.extend(viktors_ingredients)
     shopping_list.extend(georgis_ingredients)
 
     shopping_list = shopping_list[::-1]
 
     unique_ingredients = set(shopping_list)
 
+    # optioanlly:
+    # ingredient_quantities = dict.fromkeys(unique_ingredients, 5)
     ingredient_quantities = {ingredient: 5 for ingredient in unique_ingredients}
     ingredient_quantities['skyr'] = 1
 
