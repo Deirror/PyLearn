@@ -5,7 +5,11 @@ def dict_examine(my_dict):
     if type(my_dict) is not dict:
         return None
     else:
-        if my_dict.get('name') in UNIQUE_WORDS:
+        key = my_dict.get('name')
+        if key is None:
+            return None
+
+        if key.lower() in UNIQUE_WORDS:
             if len(my_dict) == 2:
                 cost = my_dict.get('cost')
                 if cost is not None:
