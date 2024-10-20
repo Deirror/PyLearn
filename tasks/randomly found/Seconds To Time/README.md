@@ -1,4 +1,4 @@
-Problem
+Description
 -
 
 Create a function, which takes a number, which indicates a number of seconds and returns a transformed tuple of 3 numbers - hours, minutes and seconds
