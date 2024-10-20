@@ -2,13 +2,13 @@
 MAX_SIZE = 1e6
 ID = 1
 #...and so on
-ID = 2 #But you can do this!
+ID = 2 # But you can do this!
 
 
 from typing import Final
 
 VERSION: Final[str] = '1.0.12'
-VERSION = '0' #Compile Error! Cannot modify variable
+VERSION = '0' # Compile Error! Cannot modify variable
 
 
 from collections import namedtuple
