@@ -1,3 +1,8 @@
+@dataclass # Automatically implements dunder methods for you
+class Surprise:
+    pass
+
+
 class Car:
     count = 0
     unknown = 0
