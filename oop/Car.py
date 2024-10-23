@@ -5,9 +5,11 @@ class Car:
         self.year = year
         self.color = color
         self.for_sale = for_sale
-        Car.count_objects++
+        Car.count_objects += 1
 
     def __str__(self):
-        return f'{self.color} {self.model}, made in {self.year} -> for sale?{'YESS' if self.for_sale else 'HECK NO'}'  
+        return f'{self.color.capitalize()} {self.model.capitalize()}, made in {self.year} -> for sale? {'YESS' if self.for_sale else 'HECK NO'}'
 
- car = Car('Porsha', 1939, red, False) 
+
+car = Car('Porsha', 1939, 'red', False)
+print(car)
