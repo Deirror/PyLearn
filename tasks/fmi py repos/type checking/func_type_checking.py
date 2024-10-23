@@ -29,6 +29,3 @@ def power(num, pwr):
 @type_check("in")(str)
 def concatenate(*strings, separator=' beep boop '):
     return separator.join(strings)
-
-#print(power(6j, 2))
-#print(concatenate(5, '6', 'a'))
