@@ -3,6 +3,20 @@ class Car:
     unknown = 0
     def __init__(self):
         Car.count += 1
+        self.year = -1000
+        self._pr_var = None # Private Convention
+        
+    @property
+    def year(self):
+        pass
+
+    @year.setter
+    def year(self, year):
+        self.year = year
+
+    @year.deleter
+    def year(self):
+        del self.year
 
     @staticmethod
     def get_count():
