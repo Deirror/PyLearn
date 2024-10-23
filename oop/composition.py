@@ -26,3 +26,13 @@ class Car:
 car = Car('red', 'porsche', '1992', 350, 5)
 
 print(car)
+
+# BONUS - Nested classes
+class Company:
+    class Employee:
+        pass 
+        """Logic here for Employee"""
+
+    def __init__(self):
+        pass
+        """Here inner class Employee can be used"""
