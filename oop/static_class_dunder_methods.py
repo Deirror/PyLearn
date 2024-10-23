@@ -1,4 +1,3 @@
-# static methods
 class Car:
     count = 0
     unknown = 0
@@ -39,5 +38,3 @@ class Car:
 
 car = Car()
 print(Car.get_unknown())
-
-#class methods
