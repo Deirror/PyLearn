@@ -10,7 +10,7 @@ def type_check(io):
     def types(*valid_types):
         def wrapper(func):
             def power_wrapper(*args, **kwargs):
-                variables = list(args) + list(kwargs)
+                variables = list(args) + list(kwargs.values())
                 if io == 'in':
                     try_io(io, valid_types, *variables)
                 result = func(*variables)
